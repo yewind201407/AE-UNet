@@ -106,26 +106,4 @@ Use the `evaluate.py` script to test a trained model on the test set.
 python evaluate.py --dataset isic2018 --data_path ./data/isic2018 --checkpoint_path ./checkpoints/ae_unet_isic2018_best.pth
 ```
 
-**Key Arguments:**
--   `--checkpoint_path`: Path to the trained model `.pth` file.
--   `--data_path`: Path to the dataset for evaluation.
--   `--save_path`: Directory to save segmentation mask predictions.
 
-The script will print the evaluation metrics (mIoU, F1-score, Precision, Recall) and save the predicted masks to the specified directory.
-
-## Citation
-
-If you find this work useful for your research, please consider citing our paper:
-
-```bibtex
-@article{yang2024aeunet,
-  title={An Efficient and Privacy-Preserving Biomedical Image Segmentation Framework for Remote Patient Diagnosis},
-  author={Yang, Bin and Liu, Yunxing and Cao, Enguo},
-  journal={Journal of Electronic Imaging},
-  year={2024}
-}
-```
-
-## License
-
-This project is licensed under the MIT License. 
